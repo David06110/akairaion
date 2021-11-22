@@ -1,0 +1,2 @@
+module CroixHelper
+end
