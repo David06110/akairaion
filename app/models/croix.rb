@@ -1,0 +1,3 @@
+class Croix < ApplicationRecord
+
+end
