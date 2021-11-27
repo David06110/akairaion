@@ -1,0 +1,13 @@
+<div class="newcroix-page">
+  <div class="title">
+    <h1>Voici ton nouveau stylo</h1>
+    <p>Si tu vois un grain de sable tomber, clique sur le pseudo de celui qui l'a laissé s'échapper!</p>
+  </div>
+  <div>
+    <%= link_to "Retour au résumé", croix_index_path %>
+  </div>
+  <div>
+    <% @discord_users.each do |user| %>
+    <%= user.gameid %>
+    <% end %>
+  </div>

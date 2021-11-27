@@ -1,14 +1,53 @@
-<div class="common-page">
+<div class="pillori-page">
   <div class="title">
-    <h1>Bienvenue</h1>
-    <p>Vous étes arrivé(e) à la croisé des chemins</p>
+    <h1>Voici le pillori planter dans le bac à sable</h1>
+    <p>Si vous avez perdu pied, laché votre grain de folie afin que le tas de sable monte</p>
   </div>
-  <div class="content">
-    <div id="pillule-bleu">
-      <%= link_to "Allez sur le site officiel", "http://www.akairaion.net/", :target => "_blank" %>
+  <div>
+    <%= link_to "Ajout de croix (visible par le donneur de croix)", new_croix_path %>
+  </div>
+  <div class="record">
+    <div class="month">
+      <h2>Records du mois :</h2>
+      <h4>Plus grand nombre de croix :</h4>
+      <h4>Plus grand montant versé :</h4>
+      <h4>Plus grand nombre en une journée :</h4>
+      <h4>Moyenne de croix par jour : 7</h4>
+
     </div>
-    <div id="pillule-rouge">
-      <%= link_to "Continuer vers le bac à sable", croix_index_url %>
+
+    <div classs="alltime">
+      <h2>Records de tous les temps</h2>
+      <h4>Plus grand nombre de croix :</h4>
+      <h4>Plus grand montant versé :</h4>
+      <h4>Plus grand nombre en une journée : Aragon     12</h4>
+      <h4>Moyenne de croix par jour : 7</h4>
+
     </div>
   </div>
+
+  <div class="succes">
+    <h2>Les hauts faits de la croix</h2>
+    <h4>Le Sage :</h4>
+    <P>(Joueur étant venu régulièrement sur le vocal, et n'ayant pas reçu de croix)</p>
+    <h4>Le Mécène :</h4>
+    <P>(A payé un million de pièces d'or pour ses croix)</p>
+    <h4>Poupou :</h4>
+    <P>(A fini second)</p>
+    <h4>Le Grognard :</h4>
+    <P>(A été débouté par la majorité 10 fois après avoir contesté une croix)</p>
+    <h4>L'Avocat :</h4>
+    <P>(A réussi 10 fois à faire invalider une croix)</p>
+    <h4>L'Agent (Fayot) :</h4>
+    <P>(A fait rajouter dix croix à d'autres joueurs)</p>
+    <h4>Chevalier de la croix de fer : 07/11/2021 Chalomar</h4>
+    <P>(A organisé un événement durant lequel 10 croix ont été distribuées)</p>
+  </div>
+
+
 </div>
+<%#
+user_signed_in?
+# => true / false
+current_user
+# => User instance / nil %>
