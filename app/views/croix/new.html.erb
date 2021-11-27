@@ -6,3 +6,8 @@
   <div>
     <%= link_to "Retour au résumé", croix_index_path %>
   </div>
+  <div>
+    <% @discord_users.each do |user| %>
+    <%= user.gameid %>
+    <% end %>
+  </div>

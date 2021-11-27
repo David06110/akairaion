@@ -16,19 +16,19 @@ ActiveRecord::Schema.define(version: 2021_11_26_163628) do
   enable_extension "plpgsql"
 
   create_table "croixes", force: :cascade do |t|
-    t.bigint "pseudo_id"
+    t.bigint "discordid_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["pseudo_id"], name: "index_croixes_on_pseudo_id"
+    t.index ["discordid_id"], name: "index_croixes_on_discordid_id"
   end
 
-  create_table "pseudos", force: :cascade do |t|
+  create_table "discordids", force: :cascade do |t|
     t.string "gameid"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["gameid"], name: "unique_gameids", unique: true
-    t.index ["user_id"], name: "index_pseudos_on_user_id"
+    t.index ["user_id"], name: "index_discordids_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -46,5 +46,4 @@ ActiveRecord::Schema.define(version: 2021_11_26_163628) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "pseudos", "users"
 end
