@@ -13,4 +13,23 @@
  *= require_tree .
  *= require_self
  */
-@import 'index'
+@import "croix/index";
+@import "home/index";
+@import "components/index";
+@import "home/index";
+@import "devise/index";
+
+
+body {
+  margin: 0 4 0 4;
+  padding: 0 4 0 4;
+  background: rgba(128, 128, 128, 0.241) url(asset_path("BigLion-300x300.png")) no-repeat center center;
+}
+
+a {
+  margin: 0;
+  color: #214A7B;
+  text-decoration: none;
+  font-size: 24px;
+  transition: 1s ease;
+}
